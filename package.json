@@ -1,6 +1,6 @@
 {
   "name": "bells-secp256k1",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A tiny secp256k1 JS",
   "homepage": "https://github.com/bitcoinjs/tiny-secp256k1#readme",
   "bugs": {
@@ -11,14 +11,13 @@
     "url": "https://github.com/bitcoinjs/tiny-secp256k1.git"
   },
   "license": "MIT",
-  "type": "module",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
   "files": [
     "lib"
   ],
   "dependencies": {
-    "base64-arraybuffer": "^1.0.2"
+    "base64-arraybuffer": "1.0.2"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.22.5",
