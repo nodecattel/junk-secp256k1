@@ -19,12 +19,12 @@ export default class Memory {
     const WASM_PUBLIC_KEY_INPUT_PTR = wasm.PUBLIC_KEY_INPUT.value;
     const WASM_PUBLIC_KEY_INPUT_PTR2 = wasm.PUBLIC_KEY_INPUT2.value;
     const WASM_X_ONLY_PUBLIC_KEY_INPUT_PTR = wasm.X_ONLY_PUBLIC_KEY_INPUT.value;
-    const WASM_X_ONLY_PUBLIC_KEY_INPUT2_PTR =
-      wasm.X_ONLY_PUBLIC_KEY_INPUT2.value;
+    const WASM_X_ONLY_PUBLIC_KEY_INPUT2_PTR = wasm.X_ONLY_PUBLIC_KEY_INPUT2.value;
     const WASM_TWEAK_INPUT_PTR = wasm.TWEAK_INPUT.value;
     const WASM_HASH_INPUT_PTR = wasm.HASH_INPUT.value;
     const WASM_EXTRA_DATA_INPUT_PTR = wasm.EXTRA_DATA_INPUT.value;
     const WASM_SIGNATURE_INPUT_PTR = wasm.SIGNATURE_INPUT.value;
+
     this.PRIVATE_KEY_INPUT = this.WASM_BUFFER.subarray(
       WASM_PRIVATE_KEY_PTR,
       WASM_PRIVATE_KEY_PTR + validate.PRIVATE_KEY_SIZE

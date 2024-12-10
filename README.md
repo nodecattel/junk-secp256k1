@@ -1,21 +1,21 @@
-# tiny-secp256k1
+# junk-secp256k1
 
-[![NPM](https://img.shields.io/npm/v/tiny-secp256k1.svg)](https://www.npmjs.org/package/tiny-secp256k1)
+[![NPM](https://img.shields.io/npm/v/junk-secp256k1.svg)](https://www.npmjs.org/package/junk-secp256k1)
 
-This library is under development, and, like the [secp256k1](https://github.com/bitcoin-core/secp256k1) C library (through [secp256k1-sys](https://github.com/rust-bitcoin/rust-secp256k1/) Rust crate) it depends on, this is a research effort to determine an optimal API for end-users of the bitcoinjs ecosystem.
+This library provides a secp256k1 implementation optimized for Junkcoin. Like the [secp256k1](https://github.com/bitcoin-core/secp256k1) C library (through [secp256k1-sys](https://github.com/rust-bitcoin/rust-secp256k1/) Rust crate) it depends on, this is a research effort to determine an optimal API for end-users of the Junkcoin ecosystem.
 
 ## Installation
 
 ### npm
 
 ```bash
-npm install tiny-secp256k1
+npm install junk-secp256k1
 ```
 
 ### yarn
 
 ```bash
-yarn add tiny-secp256k1
+yarn add junk-secp256k1
 ```
 
 ## WebAssembly and Node.js version

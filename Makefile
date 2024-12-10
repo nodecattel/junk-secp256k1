@@ -140,7 +140,7 @@ test_browser_raw = node tests/browser-run.js | npx tap-summary
 
 .PHONY: test-browser-raw
 test-browser-raw:
-	$(test_browser_raw)
+	node tests/browser-run.js
 
 .PHONY: test-browser-raw-ci
 test-browser-raw-ci:

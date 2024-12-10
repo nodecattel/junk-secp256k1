@@ -1,14 +1,14 @@
 {
-  "name": "bells-secp256k1",
-  "version": "0.1.1",
-  "description": "A tiny secp256k1 JS",
-  "homepage": "https://github.com/bitcoinjs/tiny-secp256k1#readme",
+  "name": "junk-secp256k1",
+  "version": "0.0.1",
+  "description": "A secp256k1 implementation optimized for Junkcoin.",
+  "homepage": "https://github.com/nodecattel/junk-secp256k1#readme",
   "bugs": {
-    "url": "https://github.com/bitcoinjs/tiny-secp256k1/issues"
+    "url": "https://github.com/nodecattel/junk-secp256k1/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bitcoinjs/tiny-secp256k1.git"
+    "url": "https://github.com/nodecattel/junk-secp256k1.git"
   },
   "license": "MIT",
   "main": "./lib/index.js",
@@ -16,31 +16,49 @@
   "files": [
     "lib"
   ],
+  "scripts": {
+    "test": "tape test/*.js"
+  },
   "dependencies": {
-    "base64-arraybuffer": "1.0.2"
+    "base64-arraybuffer": "^1.0.2",
+    "minimist": "^1.2.8"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.22.5",
     "@babel/plugin-syntax-import-assertions": "^7.22.5",
-    "@types/node": "^14.14.35",
+    "@babel/plugin-transform-runtime": "^7.25.9",
+    "@babel/preset-env": "^7.26.0",
+    "@playwright/test": "^1.49.1",
+    "@types/node": "^14.18.63",
     "@typescript-eslint/eslint-plugin": "^4.18.0",
     "@typescript-eslint/parser": "^4.18.0",
-    "browser-run": "^12.0.0",
+    "babelify": "^10.0.0",
+    "browserify": "^17.0.1",
     "buffer": "^6.0.3",
+    "copy-webpack-plugin": "^12.0.2",
+    "electron": "^33.2.1",
+    "electron-mocha": "^13.0.1",
     "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
+    "karma": "^6.4.4",
+    "karma-chrome-launcher": "^3.2.0",
+    "karma-tape": "^0.0.1",
     "nyc": "^15.1.0",
     "path-browserify": "^1.0.1",
     "prettier": "^2.2.1",
     "process": "^0.11.10",
+    "puppeteer": "^23.10.2",
     "sort-package-json": "^1.49.0",
     "stream-browserify": "^3.0.0",
-    "tap-summary": "^4.0.0",
-    "tape": "^5.2.2",
+    "tap-mocha-reporter": "^5.0.3",
+    "tape": "^5.9.0",
+    "through": "^2.3.8",
+    "trim-newlines": "^3.0.1",
     "typescript": "^4.2.3",
-    "webpack": "^5.24.4",
-    "webpack-cli": "^4.5.0"
+    "util": "^0.12.5",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^4.10.0"
   },
   "engines": {
     "node": ">=14.0.0"
